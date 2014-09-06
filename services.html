@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Big Sky Dog Training</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="CSS/style.css" rel="stylesheet" media="screen">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $(".contactLink").click(function(){
+                if ($("#contactForm").is(":hidden")){
+                    $("#contactForm").slideDown("slow");
+                }
+                else{
+                    $("#contactForm").slideUp("slow");
+                }
+            });
+        });
+        function closeForm(){
+            $("#messageSent").show("slow");
+            setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
+		}
+
+		$(document).ready(function() {
+		  function filterPath(string) {
+		    return string
+		      .replace(/^\//,'')
+		      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+		      .replace(/\/$/,'');
+		  }
+		  $('a[href*=#]').each(function() {
+		    if ( filterPath(location.pathname) == filterPath(this.pathname)
+		    && location.hostname == this.hostname
+		    && this.hash.replace(/#/,'') ) {
+		      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+		      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+		       if ($target) {
+		         var targetOffset = $target.offset().top;
+		         $(this).click(function() {
+		           $('html, body').animate({scrollTop: targetOffset}, 1000);
+		           var d = document.createElement("div");
+		        d.style.height = "101%";
+		        d.style.overflow = "hidden";
+		        document.body.appendChild(d);
+		        window.scrollTo(0,scrollToM);
+		        setTimeout(function() {
+		        d.parentNode.removeChild(d);
+		            }, 10);
+		           return false;
+		         });
+		      }
+		    }
+		  });
+		});
+	/*! Smooth Scroll - v1.4.5 - 2012-07-22
+	* Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
+	</script>
+</head>
+
+<body>
+
+	<nav id="menu" class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation">
+		<div id="top" class="container">
+			<div class="collapse navbar-collapse">
+	            <ul class="nav navbar-nav">
+	              <li class="active"><a href="index.html">HOME</a></li>
+	            </ul>
+	            <ul class="nav navbar-nav navbar-right">
+	              <li><a href="services.html">SERVICES</a></li>
+	              <li><a href="facility.html">FACILITY</a></li>
+	              <li><a href="gallery.html">GALLERY</a></li>
+	              <li><a href="#five">TESTIMONIES</a></li>
+	              <li><a href="#six">ABOUT</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
+
+	<ul class="nav nav-pills navbar-fixed-top">
+		<li><a href="#boarding">Boarding</a></li>
+		<li><a href="#gun">Gun Dog Training</a></li>
+		<li><a href="#school">Boarding School</a></li>
+		<li><a href="#lessons">Private Lessons</a></li>
+		<li><a href="#top">Top <span class="glyphicon glyphicon-chevron-up"></span></a></li>
+	</ul>
+
+	<div id="page1">
+	  <a id="top"></a>
+	  <div class="container">
+	  	<div class="jumbotron">
+	  		<h3 class ="text-justify">At Big Sky Dog Training, we offer many different services in order to address the specific needs of each client and their dog. Check out the different programs below to determine which one best suits you. If you have any questions about the program always feel free to call us. </h3>
+	  	</div>
+	  </div>
+	</div>
+
+	<div id="page2">
+	  <a id="boarding"></a>
+	  <div class="container">
+	  	<div class="jumbotron">
+	  		<h3 class="text-justify">Your dog stays in our climate controlled kennel building which has 5x5 indoor runs with access to a 5x10 outdoor run. The dogs are able to move freely from inside to out as long as the weather permits us to leave their doggy doors open.The building is also equipped with large windows and skylights to provide the dogs with fresh air and natural light. All kennels are sanitized daily and routinely spot checked throughout the day. Each kennel has an individual drain to prevent any cross contamination. Your dog will also be provided an elevated bed to keep him off the floor while he sleeps. Soothing music is played throughout the building 24 hours a day to help create a calming atmosphere.</h3>
+	  		<a>READ MORE<span class="glyphicon glyphicon-chevron-right"></span></a>
+	  	</div>
+	  </div>
+	</div>
+
+	<div id="page3">
+	  <a id="gun"></a>
+	  	<div class="container">
+	  		<div class="jumbotron">
+		  		<h3 class="text-justify">Gun Dog Training requires a commitment of at least three months (Twelve weeks) to produce a quality Started Gun Dog. Big Sky Dog Training specializes in training retrievers for both waterfowl and upland hunting. Marty believes that each dog deserves individual attention both in the yard and out in the field. Because of this, he will only train a maximum of 10 Gun Dogs at any given time. Your dog must be at least 6 months of age to enroll in the program.</h3>
+		  		<a>READ MORE<span class="glyphicon glyphicon-chevron-right"></span></a>
+	  		</div>
+	  </div>
+	</div>
+
+	<div id="page4">
+	  <a id="school"></a>
+	</div>
+
+	<div id="page5">
+	  <a id="lessons"></a>
+	</div>
+	
+</body>
+
+</html>
