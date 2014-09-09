@@ -1,4 +1,8 @@
 
+/* Josh Malters 2014 */
+
+/* Top level styling for all pages */
+
 .carousel {
     height: 100%;
 }
@@ -13,7 +17,7 @@
  .carousel .item {
     width: 100%;
     height: 800px;
-    background-color: #777;
+    background-color: gray;
 }
 
 .carousel-inner > .item > img {
@@ -117,21 +121,9 @@ img {
 	background-position: center top;
 }
 
-#page2 {
-	background-image: url(../images/playDog.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#page3 {
-	background-image: url(../images/gunDog.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0px -50px;
-}
-
 #page1 .jumbotron {
 	margin-top: 200px;
+	background-color: rgb(88, 95, 110);
 	background-color: rgba(88, 95, 110, .85);
 }
 
@@ -139,11 +131,17 @@ img {
 	color: white;
 }
 
+#page2 {
+	background-image: url(../images/playDog.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #page2 .jumbotron {
 	margin-top: 450px;
 	padding: 15px;
-	background-color: rgb(148, 7, 80);
-	background-color: rgba(77, 118, 138, .5);
+	background-color: rgb(77, 118, 138);
+	background-color: rgba(77, 118, 138, .65);
 }
 
 #page2 .jumbotron a {
@@ -154,13 +152,20 @@ img {
 	color: white;
 }
 
+#page3 {
+	background-image: url(../images/gunDog.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px -50px;
+}
+
 #page3 .jumbotron {
 	margin-top: 580px;
 	padding: 15px;
 	padding-top: 1px;
 	padding-bottom: 5px;
-	background-color: rgb(148, 7, 80);
-	background-color: rgba(31, 86, 23, .5);
+	background-color: rgb(31, 86, 23);
+	background-color: rgba(31, 86, 23, .65);
 }
 
 #page3 .jumbotron a {
@@ -168,5 +173,47 @@ img {
 }
 
 #page3 .jumbotron h3 {
+	color: white;
+}
+
+#page4 {
+	background-image: url(../images/boarding.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#page4 .jumbotron {
+	margin-top: 150px;
+	padding: 15px;
+	padding-top: 1px;
+	padding-bottom: 5px;
+	background-color: rgb(255, 255, 0);
+	background-color: rgba(255, 255, 0, .65);
+}
+
+#page4 .jumbotron a, h3{
+	color: black;
+}
+
+#page5 {
+	background-image: url(../images/private.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#page5 .jumbotron {
+	margin-top: 350px;
+	padding: 15px;
+	padding-top: 1px;
+	padding-bottom: 5px;
+	background-color: rgb(255, 255, 0);
+	background-color: rgba(107, 28, 191, .5);
+}
+
+#page5 .jumbotron a {
+	color: black;
+}
+
+#page5 .jumbotron h3 {
 	color: white;
 }

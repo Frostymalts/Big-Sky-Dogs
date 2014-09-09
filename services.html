@@ -8,56 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link href="CSS/style.css" rel="stylesheet" media="screen">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-		    $(".contactLink").click(function(){
-                if ($("#contactForm").is(":hidden")){
-                    $("#contactForm").slideDown("slow");
-                }
-                else{
-                    $("#contactForm").slideUp("slow");
-                }
-            });
-        });
-        function closeForm(){
-            $("#messageSent").show("slow");
-            setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
-		}
-
-		$(document).ready(function() {
-		  function filterPath(string) {
-		    return string
-		      .replace(/^\//,'')
-		      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-		      .replace(/\/$/,'');
-		  }
-		  $('a[href*=#]').each(function() {
-		    if ( filterPath(location.pathname) == filterPath(this.pathname)
-		    && location.hostname == this.hostname
-		    && this.hash.replace(/#/,'') ) {
-		      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-		      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-		       if ($target) {
-		         var targetOffset = $target.offset().top;
-		         $(this).click(function() {
-		           $('html, body').animate({scrollTop: targetOffset}, 1000);
-		           var d = document.createElement("div");
-		        d.style.height = "101%";
-		        d.style.overflow = "hidden";
-		        document.body.appendChild(d);
-		        window.scrollTo(0,scrollToM);
-		        setTimeout(function() {
-		        d.parentNode.removeChild(d);
-		            }, 10);
-		           return false;
-		         });
-		      }
-		    }
-		  });
-		});
-	/*! Smooth Scroll - v1.4.5 - 2012-07-22
-	* Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
-	</script>
+	<script type="text/javascript" src="JavaScript/smoothScroll.js"></script>
 </head>
 
 <body>
@@ -72,8 +23,8 @@
 	              <li><a href="services.html">SERVICES</a></li>
 	              <li><a href="facility.html">FACILITY</a></li>
 	              <li><a href="gallery.html">GALLERY</a></li>
-	              <li><a href="#five">TESTIMONIES</a></li>
-	              <li><a href="#six">ABOUT</a></li>
+	              <li><a href="testimonies.html">TESTIMONIES</a></li>
+	              <li><a href="about.html">ABOUT</a></li>
 	            </ul>
 	        </div>
 	    </div>
@@ -113,15 +64,27 @@
 		  		<h3 class="text-justify">Gun Dog Training requires a commitment of at least three months (Twelve weeks) to produce a quality Started Gun Dog. Big Sky Dog Training specializes in training retrievers for both waterfowl and upland hunting. Marty believes that each dog deserves individual attention both in the yard and out in the field. Because of this, he will only train a maximum of 10 Gun Dogs at any given time. Your dog must be at least 6 months of age to enroll in the program.</h3>
 		  		<a>READ MORE<span class="glyphicon glyphicon-chevron-right"></span></a>
 	  		</div>
-	  </div>
+	  	</div>
 	</div>
 
 	<div id="page4">
 	  <a id="school"></a>
+	  	<div class="container">
+	  		<div class="jumbotron">
+		  		<h3 class="text-justify">Don't have the time, patience, or know-how to modify your dog's behavior yourself?  Big Sky Dog Training offers a boarding school program that addresses basic obedience and behavior modification for all breeds. Your dog receives the same luxuries of our boarding dogs but they will receive two behavior training sessions a day with Marty.</h3>
+		  		<a>READ MORE<span class="glyphicon glyphicon-chevron-right"></span></a>
+	  		</div>
+	  	</div>
 	</div>
 
 	<div id="page5">
 	  <a id="lessons"></a>
+	  	<div class="container">
+	  		<div class="jumbotron">
+		  		<h3 class="text-justify">This program provides you with the exercises and techniques necessary to train your gun dog on your own.</h3>
+		  		<a>READ MORE<span class="glyphicon glyphicon-chevron-right"></span></a>
+	  		</div>
+	  	</div>
 	</div>
 	
 </body>
