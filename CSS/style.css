@@ -32,9 +32,6 @@
         margin-bottom: 75px;
     }
 }
-img {
-    background: red;
-}
 
 #front-motto {
 	padding-top: 7%;
@@ -216,4 +213,40 @@ img {
 
 #page5 .jumbotron h3 {
 	color: white;
+}
+
+#aboutTxt {
+	margin-top: 50px;
+	background-color: rgb(242,242,242);
+	padding-bottom: 50px;
+}
+
+#martyQ {
+	margin-top: 150px;
+	padding-bottom: 150px;
+}
+
+
+#martyQ img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#foot {
+	background-color: rgb(242,242,242);
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#directions {
+	background-color: rgb(242,242,242);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#directions address {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
 }
