@@ -33,6 +33,54 @@
     }
 }
 
+#facPage1 {
+	background-color: #f2f2f2;
+	color: black;
+	margin-top: 50px;
+	height: 600px;
+	padding-top: 100px;
+}
+
+#facPage1 img {
+	height: 500px;
+}
+
+#facPage1 p {
+	margin-top: 50px;
+}
+
+#facPage2 {
+	background-image: url(../images/kennel.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 700px;
+}
+
+#facPage3 {
+	background-image: url(../images/indoorKennel.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 700px;
+}
+
+#facPage4 {
+	background-image: url(../images/dogPrep.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 700px;
+}
+
+#facPage5 {
+	background-image: url(../images/facPicOne.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 700px;
+}
+
 #front-motto {
 	padding-top: 7%;
 }
@@ -245,6 +293,14 @@
 	background-color: rgb(242,242,242);
 	padding-top: 25px;
 	padding-bottom: 25px;
+}
+
+#facPills.nav-pills a {
+	background-color: rgba(105, 226, 81, .75);
+}
+
+#facPills.nav-pills a:hover {
+	background-color:  rgba(54, 127, 45, .75);
 }
 
 #directions {
