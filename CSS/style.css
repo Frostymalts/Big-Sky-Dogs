@@ -208,29 +208,19 @@
 }
 
 #test1 {
-	background-color: rgb(244, 244, 244);
-	padding-top: 75px;
-	padding-bottom: 75pxß;
-}
-
-
-#test1 img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#test2 {
-	background-color: rgb(100, 100, 100);
+	background-color: #f2f2f2;
 	padding-top: 75px;
 	padding-bottom: 75px;
 }
 
+#test1 blockquote {
+	border-left-color: #b6d0d3;
+}
 
-#test2 img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+#test2 {
+	background-color: #b6d0d3;
+	padding-top: 75px;
+	padding-bottom: 75px;
 }
 
 #aboutTxt {
