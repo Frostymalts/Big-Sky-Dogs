@@ -37,24 +37,16 @@
 	padding-top: 7%;
 }
 
+#logo {
+	height: 600px;
+}
+
 #head {
-	margin-top: 5%;
-	margin-left: -4%;
-	left: 0;
-}
-
-.jumbotron {
-	background: rgb(0, 0, 0); /* This is for ie8 and below */
-	background: rgba(0, 0, 0, 0);
-}
-
-.jumbotron h1, h2 {
-	color: white;
-}
-
-#lower {
-	margin-top: 25%;
-	right: 0;
+	color: #fff;
+	margin-top: 75px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
 .nav-pills {
@@ -213,6 +205,32 @@
 
 #page5 .jumbotron h3 {
 	color: white;
+}
+
+#test1 {
+	background-color: rgb(244, 244, 244);
+	padding-top: 75px;
+	padding-bottom: 75pxß;
+}
+
+
+#test1 img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#test2 {
+	background-color: rgb(100, 100, 100);
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+
+#test2 img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #aboutTxt {
